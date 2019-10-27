@@ -28,7 +28,7 @@ h3 {
   }
   &.sm-heading {
     padding: 0.2rem 1rem;
-    margin-bottom: 0.2rem 1rem;
+    margin-bottom: 2rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
@@ -61,7 +61,7 @@ main {
 
       &:hover {
         color: $secondary-color;
-        @include easeOut();
+        @include easeOut;
       }
     }
   }
@@ -74,6 +74,7 @@ main {
   }
 }
 
+// About Page
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -87,11 +88,13 @@ main {
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
+    width: 250px;
+    height: 250px;
   }
 
   .bio {
     grid-area: bio;
-    font: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .job-1 {
@@ -142,7 +145,7 @@ main {
   div {
     font-size: 2rem;
     border: 3px #fff solid;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
 
