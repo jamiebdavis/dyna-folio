@@ -22,18 +22,18 @@
           transform: rotate(180deg);
 }
 
-.menu-btn.close:nth-child(1) {
-  -webkit-transform: rotate(45deg) translate(5px 5px);
-          transform: rotate(45deg) translate(5px 5px);
+.menu-btn.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
 }
 
-.menu-btn.close:nth-child(2) {
+.menu-btn.close .btn-line:nth-child(2) {
   opacity: 0;
 }
 
-.menu-btn.close:nth-child(3) {
-  -webkit-transform: rotate(-45deg) translate(7px -6px);
-          transform: rotate(-45deg) translate(7px -6px);
+.menu-btn.close .btn-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(7px, -6px);
 }
 
 .menu {
@@ -102,7 +102,7 @@
   height: 250px;
   background: url("../dist/img/portrait.jpg");
   border-radius: 50%;
-  border: solid 3px #eece1a;
+  border: solid 3px #03fcf0;
 }
 
 .menu .nav-item {
@@ -118,7 +118,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: #eece1a;
+  color: #03fcf0;
 }
 
 .menu .nav-link {
@@ -135,7 +135,7 @@
 }
 
 .menu .nav-link:hover {
-  color: #eece1a;
+  color: #03fcf0;
 }
 
 .nav-item:nth-child(1) {
@@ -222,7 +222,7 @@ header {
 }
 
 .text-secondary {
-  color: #eece1a;
+  color: #03fcf0;
 }
 
 main {
@@ -239,7 +239,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #eece1a;
+  color: #03fcf0;
   -webkit-transition: all 0.6s ease-out;
   transition: all 0.6s ease-out;
 }
@@ -267,7 +267,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid;
+  border: #03fcf0 3px solid;
   width: 250px;
   height: 250px;
 }
@@ -301,7 +301,7 @@ main#home h1 {
 .about-info .job {
   background: #515151;
   padding: 0.5rem;
-  border-bottom: #eece1a 5px solid;
+  border-bottom: #03fcf0 5px solid;
 }
 
 .projects {
@@ -319,15 +319,13 @@ main#home h1 {
 
 .projects img:hover {
   opacity: 0.5;
-  border-color: #eece1a;
+  border-color: #03fcf0;
   -webkit-transition: all 0.6s ease-out;
   transition: all 0.6s ease-out;
 }
 
 .boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
@@ -350,7 +348,7 @@ main#home h1 {
 
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
-  background: #eece1a;
+  background: #03fcf0;
   color: #000;
 }
 
@@ -366,7 +364,7 @@ main#home h1 {
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #eece1a;
+  background: #03fcf0;
   color: #000;
 }
 
